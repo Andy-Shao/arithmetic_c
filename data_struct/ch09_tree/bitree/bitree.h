@@ -19,7 +19,7 @@ typedef struct BiTree_{
 }BiTree;
 
 //Public Interface
-void bitree_init(BiTree *tree, void (*destroy)(void *data);
+void bitree_init(BiTree *tree, void (*destroy)(void *data));
 void bitree_destroy(BiTree *tree);
 int bitree_ins_left(BiTree *tree, BiTreeNode *node, const void *data);
 int bitree_ins_right(BiTree *tree, BiTreeNode *node, const void *data);
