@@ -23,6 +23,7 @@ void bistree_init(BisTree *tree, int (*compare)(const void *key, const void *key
 void bistree_destroy(BisTree *tree);
 int bistree_insert(BisTree *tree, const void *data);
 int bistree_remove(BisTree *tree, void *data);
+int bistree_lookup(BisTree *tree, void **data);
 #define bistree_size(tree) ((tree)->size)
 
 #endif
