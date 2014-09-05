@@ -86,7 +86,7 @@ int heap_extract(Heap *heap, void **data){
 	//Adjust the storage used by the heap.
 	save = heap->tree[heap_size(heap)-1];
 
-	if(heap-size(heap) - 1 > 0){
+	if(heap_size(heap) - 1 > 0){
 		if((temp = (void **)realloc(heap->tree, (heap_size(heap) - 1) * sizeof(void *))) == NULL) return -1;
 
 		//Adjust the size of the heap to account for the extracted node.
