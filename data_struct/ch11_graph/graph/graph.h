@@ -2,7 +2,7 @@
 #define GRAPH_H_
 
 #include <stdlib.h>
-#include "../ch07_collection/set/set.h"
+#include "../../ch07_collection/set/set.h"
 
 //Define a structure for adjacency lists.
 typedef struct AdjList_{
