@@ -1,7 +1,7 @@
 #ifndef BFS_H_
 #define BFS_H_
 
-#include "graph.h"
+#include "../graph/graph.h"
 
 //Define a structure a vertices in a breadth-first search.
 typedef struct BfsVertex_{
