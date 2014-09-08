@@ -15,6 +15,7 @@ typedef struct Graph_{
     int vcount;
     int ecount;
 
+    //match vertex
     int (*match)(const void *key1, const void *key2);
     void (*destroy)(void *data);
 

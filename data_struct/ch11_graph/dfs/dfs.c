@@ -25,7 +25,7 @@ static int dfs_main(Graph *graph, AdjList *adjlist, List *ordered){
     }
 
     //Color the current vertex black and make it first in the list.
-    ((DfsVertex *)adjList->vertex)->color = black;
+    ((DfsVertex *)adjlist->vertex)->color = black;
 
     if(list_ins_next(ordered, NULL, (DfsVertex *)adjlist->vertex) != 0) return -1;
 
@@ -36,7 +36,7 @@ int dfs(Graph *graph, List *ordered){
     ListElmt *element;
 
     //Initialize all of the vertices in the graph.
-    for(element=list_haed(&graph_adjlists(graph)); element!=NULL; element=list_next(element)){
+    for(element=list_head(&graph_adjlists(graph)); element!=NULL; element=list_next(element)){
         vertex = ((AdjList *)list_data(element))->vertex;
         vertex->color = white;
     }
