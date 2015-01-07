@@ -5,20 +5,22 @@
 #include "../../ch07_collection/set/set.h"
 
 //Define a structure for adjacency lists.
+//邻接表链表中的结点
 typedef struct AdjList_{
-    void *vertex;
-    Set adjacent;
+    void *vertex;//端点数据
+    Set adjacent;//顶点的邻接表实现
 }AdjList;
 
 //Define a structure for graphs.
 typedef struct Graph_{
-    int vcount;
-    int ecount;
+    int vcount;//顶点的个数
+    int ecount;//边的个数
 
     //match vertex
     int (*match)(const void *key1, const void *key2);
     void (*destroy)(void *data);
 
+    //邻接表链表
     List adjlists;
 }Graph;
 
